@@ -1,4 +1,4 @@
-package com.example.dribbler_app;
+package com.softai.dribbler_app;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

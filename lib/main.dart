@@ -13,6 +13,10 @@ import 'screens/devInfo.dart';
 
 void main() => runApp(MyApp());
 
+class MyShape extends CustomPaint {
+
+}
+
 class MyApp extends StatelessWidget {
   static const String _title = 'Dribbler';
 
@@ -47,10 +51,6 @@ class _MyStatelessWidgetState extends State<MyStatelessWidget>
   Assignment assignment;
   mod.Module module;
   SubjectEach newSubject;
-
-  // Animation
-  AnimationController _controller;
-  Animation _animation;
 
   Future<String> fetchDataAssignment() async {
     var response = await http.get(urlAssignment);
@@ -150,7 +150,7 @@ class _MyStatelessWidgetState extends State<MyStatelessWidget>
                                 BorderRadius.all(Radius.circular(0.0)),
                             child: Card(
                                 clipBehavior: Clip.antiAlias,
-                                elevation: 0.0,
+                                elevation: 4.0,
                                 child: Center(
                                     child: new Text(
                                   eachResult.name,

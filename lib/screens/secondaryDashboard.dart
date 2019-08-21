@@ -141,6 +141,7 @@ class _BuildModuleListState extends State<BuildModuleList> {
   @override
   Widget build(BuildContext context) {
     return Card(
+      color: Colors.blueGrey,
       child: Padding(
         padding: const EdgeInsets.only(left: 8.0, right: 8.0, bottom: 5.0),
         child: Column(
@@ -160,7 +161,6 @@ class _BuildModuleListState extends State<BuildModuleList> {
                     style: assignmentCard,
                   ),
                 ),
-
                 // Open a file button
                 isDownloaded
                     ? IconButton(
